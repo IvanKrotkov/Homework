@@ -12,14 +12,21 @@ double DistanceBetPoint(int x1, int y1, int z1,int x2, int y2, int z2)
 
 System.Console.WriteLine($"Введите  x координаты первой точки: ");
 int x1 = int.Parse (Console.ReadLine()!);
+
 System.Console.WriteLine($"Введите  y координаты первой точки: ");
 int y1 = int.Parse (Console.ReadLine()!);
+
 System.Console.WriteLine($"Введите  z координаты первой точки: ");
 int z1 = int.Parse (Console.ReadLine()!);
+
+
 System.Console.WriteLine($"Введите  x координаты второй точки: ");
 int x2 = int.Parse (Console.ReadLine()!);
+
 System.Console.WriteLine($"Введите  y координаты второй точки: ");
 int y2 = int.Parse (Console.ReadLine()!);
+
 System.Console.WriteLine($"Введите  z координаты второй точки: ");
 int z2 = int.Parse (Console.ReadLine()!);
+
 System.Console.WriteLine(DistanceBetPoint(x1,y1,z1,x2,y2,z2));
