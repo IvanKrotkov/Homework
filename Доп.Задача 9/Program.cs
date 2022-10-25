@@ -5,10 +5,10 @@
 161 -> да
 */
 string Diff(int num)
-{    
-    string i ="Да";
+{
+    string i = "Да";
     string m = "Нет";
-    if(num%7==0&&num%23==0)
+    if (num % 7 == 0 && num % 23 == 0)
     {
         return i;
     }
