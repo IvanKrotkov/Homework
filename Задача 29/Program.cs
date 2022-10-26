@@ -33,5 +33,4 @@ System.Console.WriteLine("Введите длину массива:");
 int lenghtArray = int.Parse(Console.ReadLine()!);
 System.Console.WriteLine("Введите число, которое будет границей диапазона на выбор случайного числа");
 int maxValue = int.Parse(Console.ReadLine()!);
-CreateRandomArray(lenghtArray,maxValue);
 PrintArray(CreateRandomArray(lenghtArray,maxValue), lenghtArray);
