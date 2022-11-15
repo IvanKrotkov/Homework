@@ -4,11 +4,26 @@ b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)*/
 
 void Intersection(double b1, double k1, double b2, double k2)
 {
-    var x = (b2 - b1) / (k1 - k2);
-    var y = k1 * x + b1;
+    double x;
+    double y;
+    if (k1 == 0)
+    {
+        x = 0;
+        y = b1;
+    }
+    else if (k2 == 0)
+    {
+        x = 0;
+        y = b2;
+    }
+    else
+    {
+        x = (b2 - b1) / (k1 - k2);
+        y = k1 * x + b1;
+    }
     if (k1 == k2)
     {
-        System.Console.WriteLine("Прямые параллельны");
+        System.Console.WriteLine("Прямые параллельны или совпадают");
     }
     else
     {
