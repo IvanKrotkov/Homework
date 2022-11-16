@@ -6,29 +6,16 @@ void Intersection(double b1, double k1, double b2, double k2)
 {
     double x;
     double y;
-    if (k1 == 0)
+    if (k1 == k2)
     {
-        x = 0;
-        y = b1;
-    }
-    else if (k2 == 0)
-    {
-        x = 0;
-        y = b2;
+        System.Console.WriteLine("Прямые параллельны - точек пересечения нет, или прямые совпадают - кол-во точек пересечения равно бесконечности");
     }
     else
     {
         x = (b2 - b1) / (k1 - k2);
         y = k1 * x + b1;
-    }
-    if (k1 == k2)
-    {
-        System.Console.WriteLine("Прямые параллельны или совпадают");
-    }
-    else
-    {
-        System.Console.WriteLine("Точка пересечения:" + "(" + x + ";" + y + ")");
-    }
+        System.Console.WriteLine("Точка пересечения:" + "(" + x + ";" + y + ")");    
+    }        
 }
 
 
