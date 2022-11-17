@@ -8,14 +8,21 @@ void Intersection(double b1, double k1, double b2, double k2)
     double y;
     if (k1 == k2)
     {
-        System.Console.WriteLine("Прямые параллельны - точек пересечения нет, или прямые совпадают - кол-во точек пересечения равно бесконечности");
+        if (b1 == b2)
+        {
+            System.Console.WriteLine("Прямые совпадают");
+        }
+        else
+        {
+            System.Console.WriteLine("Прямые не совпадают и параллельны");
+        }
     }
     else
     {
         x = (b2 - b1) / (k1 - k2);
         y = k1 * x + b1;
-        System.Console.WriteLine("Точка пересечения:" + "(" + x + ";" + y + ")");    
-    }        
+        System.Console.WriteLine("Точка пересечения:" + "(" + x + ";" + y + ")");
+    }
 }
 
 
