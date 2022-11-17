@@ -4,8 +4,6 @@ b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)*/
 
 void Intersection(double b1, double k1, double b2, double k2)
 {
-    double x;
-    double y;
     if (k1 == k2)
     {
         if (b1 == b2)
@@ -18,9 +16,9 @@ void Intersection(double b1, double k1, double b2, double k2)
         }
     }
     else
-    {
-        x = (b2 - b1) / (k1 - k2);
-        y = k1 * x + b1;
+    {  
+        double x = (b2 - b1) / (k1 - k2);
+        double y = k1 * x + b1;
         System.Console.WriteLine("Точка пересечения:" + "(" + x + ";" + y + ")");
     }
 }
