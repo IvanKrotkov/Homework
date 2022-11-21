@@ -17,7 +17,7 @@ System.Console.WriteLine("Номер строки:");
 int row = int.Parse(Console.ReadLine()!);
 System.Console.WriteLine("Номер столбца:");
 int column = int.Parse(Console.ReadLine()!);
-if (row > array.GetLength(0) || column > array.GetLength(1))
+if (row >= array.GetLength(0) || column >= array.GetLength(1))
 {
     System.Console.WriteLine("Такого элемента нет");
 
