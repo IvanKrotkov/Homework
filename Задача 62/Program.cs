@@ -82,4 +82,4 @@ void PrintArray(int[,] array)
     }
 }
 
-PrintArray(SpiralFillArrayAdd(5, 5));
+PrintArray(SpiralFillArrayAdd(4, 4));
