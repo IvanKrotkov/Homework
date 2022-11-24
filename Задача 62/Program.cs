@@ -8,7 +8,7 @@
 int[,] SpiralFillArrayAdd(int rows, int columns)
 {
     int[,] spiralFilledArray = new int[rows, columns];
-    int elementInArray = 1;
+    int element = 1;
     while (element <= rows * columns)
     {
         for (int i = 0; i < columns; i++)
@@ -70,16 +70,17 @@ int[,] SpiralFillArrayAdd(int rows, int columns)
 }
 
 
-void PrintArray(int[,] array)
+
+void PrintArray(int[,] spiralFilledArray)
 {
-    for (int i = 0; i < array.GetLength(0); i++)
+    for (int i = 0; i < spiralFilledArray.GetLength(0); i++)
     {
-        for (int j = 0; j < array.GetLength(1); j++)
+        for (int j = 0; j < spiralFilledArray.GetLength(1); j++)
         {
-            System.Console.Write(array[i, j] + "\t");
+            System.Console.Write(spiralFilledArray[i, j] + "\t");
         }
         System.Console.WriteLine();
     }
 }
 
-PrintArray(SpiralFillArrayAdd(4, 4));
+PrintArray(SpiralFillArrayAdd(3, 3));

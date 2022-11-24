@@ -8,7 +8,7 @@
 Программа считает сумму элементов в каждой строке и выдаёт 
 номер строки с наименьшей суммой элементов: 1 строка*/
 
-int SumElInRowArray(int[,] array, int indexRow)
+int SumInRowArray(int[,] array, int indexRow)
 {
     int sum = 0;
     for (int i = 0; i < array.GetLength(1); i++)
@@ -18,13 +18,13 @@ int SumElInRowArray(int[,] array, int indexRow)
     return sum;
 }
 
-int FindMinSumElInRow(int[,] array)
+int FindMinSumInRow(int[,] array)
 {
     int minIndexRow = 0;
-    int minSum = SumElInRowArray(array, 0);
+    int minSum = SumInRowArray(array, 0);
     for (int i = 0; i < array.GetLength(0); i++)
     {
-        if (SumElInRowArray(array, i) < minSum)
+        if (SumInRowArray(array, i) < minSum)
         {
             minIndexRow = i;
         }
@@ -38,4 +38,4 @@ int[,] array = new int[,] {{10, 4, 7, 2},
                            {1, 2, 4, 3},
                            {0, 2, 0, 0}};
 
-FindMinSumElInRow(array);
+FindMinSumInRow(array);
