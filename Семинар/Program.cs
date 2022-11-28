@@ -1,9 +1,24 @@
-﻿/*Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
+﻿/*void NaturalNum(int n, int m = 1)
+{
+    System.Console.WriteLine(m);
+    if (m < n)
+    {
+        NaturalNum(n, m + 1);
+    }
+}
 
-m = 3, n = 4.
 
-0,5 7 -2 -0,2
+NaturalNum(10, 4);*/
 
-1 -3,3 8 -9,9
 
-8 7,8 -7,1 9*/
+/*int SumEl(int num)
+{
+    if (num == 0)
+    {
+        return 0;
+    }
+        return num % 10 + SumEl(num / 10);
+}
+
+System.Console.WriteLine(SumEl(453));*/
+
